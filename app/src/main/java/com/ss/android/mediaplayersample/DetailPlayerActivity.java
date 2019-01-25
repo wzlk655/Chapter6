@@ -17,7 +17,7 @@ import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 public class DetailPlayerActivity extends GSYBaseActivityDetail<StandardGSYVideoPlayer> {
     StandardGSYVideoPlayer detailPlayer;
 
-    private String url = "https://res.exexm.com/cw_145225549855002";
+    private String url = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +28,8 @@ public class DetailPlayerActivity extends GSYBaseActivityDetail<StandardGSYVideo
         //增加title
         detailPlayer.getTitleTextView().setVisibility(View.GONE);
         detailPlayer.getBackButton().setVisibility(View.GONE);
-
         initVideoBuilderMode();
-
+        detailPlayer.startPlayLogic();
     }
 
     @Override

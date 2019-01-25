@@ -45,6 +45,12 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenRecycler" />
+
+    <Button
         android:id="@+id/btn_third_party"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
